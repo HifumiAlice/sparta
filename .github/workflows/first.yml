@@ -7,7 +7,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: APIKEY        
+      - name: test     
+        env:
+          APIKEY: ${{ secrets.APIKEY }}          
         run: |
           echo $APIKEY
           echo $GIT_NAME
