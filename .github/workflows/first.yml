@@ -1,1 +1,7 @@
 name: Our First Workflow
+
+jobs :
+  echo:
+  runs-on : test
+  steps :
+  - run: echo "hello"
