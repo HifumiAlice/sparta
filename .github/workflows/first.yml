@@ -1,7 +1,13 @@
-name: Our First Workflow
-on: push
-jobs :
-  echo:
-    runs-on : index.html
-    steps :
-      - run: echo "hello"
+name: Update Directory Structure
+on:
+  push:
+    branches:
+      - main
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: APIKEY        
+        run: |
+          echo $APIKEY
+          echo $GIT_NAME
