@@ -1,7 +1,7 @@
 name: Our First Workflow
-
+on: push
 jobs :
   echo:
-  runs-on : test
-  steps :
-  - run: echo "hello"
+    runs-on : index.html
+    steps :
+      - run: echo "hello"
